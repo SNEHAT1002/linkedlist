@@ -1,0 +1,23 @@
+#represents induvidual element in the linked list
+class node:
+  def __init__(self,data):
+    self.data=data
+    self.next= None
+class linkedlist:
+ def __init__(self):
+   self.head= None
+ def display(self):
+   if self.head is None:
+    print("Linked List is Empty")
+   else:
+    temp=self.head
+    while temp.next:
+     print(temp.data,"-->",end="")
+     temp=temp.next
+L=linkedlist()
+n=node(10)
+L.head=n
+n1=node(20)
+L.head.next=n1
+n1.next=
+L.display()
